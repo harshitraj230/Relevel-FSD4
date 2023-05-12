@@ -10,8 +10,8 @@
 // console.log(moment.format('dddd'));
 
 //fs
-const fs=require('fs');
-const http=require('http');
+// const fs=require('fs');
+// const http=require('http');
 // fs.readFile('./tempa',function(err,data){
 //   if(err){
 //     console.log(err);
@@ -28,5 +28,10 @@ const http=require('http');
 // })
 
 //setTimeOut and setInterval
-// const myGreeting="Happy birthday"
-// const myTimeout = setTimeout(myGreeting, 5000);
+// setTimeout(()=>{
+//     console.log("hello");
+// },4000);
+
+// setInterval(()=>{
+//     console.log("hello");
+// },2000);
