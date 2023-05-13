@@ -7,6 +7,21 @@ const db={
     873:"Shrey"
 }
 
+app.use(function(req,res,next){
+    console.log(`New request received now : ${Date.now()}`);
+    next();
+})
+
+app.use(function(req,res,next){
+    const isAuthenticated=true;
+
+    if(!isAuthenticated){
+        res.status(403).send("Invalid request");
+    }else{
+        next();
+    }
+})
+
 app.get("/",function(req,res){
     res.send("Express js backend http endpoint is ready !!!");
 });
