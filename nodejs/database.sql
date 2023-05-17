@@ -1,35 +1,32 @@
--- select * from students;
+-- insert into employee values (1234,'utkarsh','malik','utmalik@amazon.com','D37 Sector49 Gurgaon','Gurugram',300);
 
--- total records present in my table
+-- select * from employee;
 
--- select count(*) from students where marks >60;
+-- insert into employee (employeeId,firstname,email,city,money) VALUES (345,'Rahul','rahul@gmail.com','Delhi',10000);
 
--- select * from students order by marks ASC;
 
--- select * from students order by marks DESC;
+-- insert into employees (employeeId,firstname,email,city,money) VALUES (345246,'Sjrey','shrey@gmail.com','Delhi',150000);
 
--- UPDATE students SET MARKS=30 where ID=6;
 
--- select * from (select * from students order by marks DESC) where rownum<=2;
 
--- select * from students where marks >=60 and age<50;
 
--- select * from students where marks >=60 OR age<50;
+-- alter table employee rename to employees;
 
--- select * from students where marks NOT BETWEEN 30 AND 55;
+-- select * from employees;
 
--- select * from students where id not in (1,5,6,10,13);
+-- Update employees SET money=100000 where employeeid=1234;
 
--- select * from students where name like '%s';
 
--- select * from students where name like '%a%';
+-- Update employees SET money=100000,city='Banglore' where employeeid=1234;
 
--- select * from students where name like '_a%';
 
--- group
+-- Update employees SET money=100000,city='Hyderabad' where money<100000;
 
--- select avg(marks) from students;
--- select sum(age) from students;
--- select count(id) from students where address='RKA';
--- select min(marks) from students;
--- select max(age) from students;
+-- select * from employees where city='Delhi' and money>100000;
+
+-- DELETE FROM employees where employeeid='345246';
+
+
+-- DELETE FROM employees where city='Hyderabad';
+
+-- select * from employees;
