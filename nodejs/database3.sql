@@ -1,0 +1,42 @@
+-- create table users(
+--     id int not null primary key,
+--     email varchar(255) not null,
+--     password varchar(255) not null,
+--     createAt date
+-- );
+-- desc users;
+-- create table products(
+--     id int not null primary key,
+--     name varchar(255) not null,
+--     category varchar(255) not null,
+--     price int not null,
+--     createdAt date
+-- );
+-- desc products;
+-- create table orders(
+--     id int not null primary key,
+--     productId int not null,
+--     userId int not null,
+--     quantity int not null,
+--     createdAt date,
+--     payment char(1)
+-- );
+-- desc orders;
+-- insert into users(id,email,password) values (1,'harshitraj@gmail.com','qwert123');
+-- insert into users(id,email,password) values (153,'rahulraj@gmail.com','qwerty1234');
+-- insert into users(id,email,password) values (15,'anisharaj@gmail.com','qwertyu12345');
+-- insert into users(id,email,password) values (16,'priyaraj@gmail.com','qwertyui123456');
+-- select * from users;
+-- insert into products(id,name,category,price) values (12,'iphone13','Phones & tablets',60000);
+-- insert into products(id,name,category,price) values (162,'Philips Man Hair Trimmer','Electronics and gadgets',2200);
+-- insert into products(id,name,category,price) values (234,'Pumna Black T-shirt','Man & Woman Wears',1200);
+-- insert into products(id,name,category,price) values (93,'Acer Laptop','Computers & Laptops',80000);
+-- select * from products;
+-- insert into orders(id,productId,userId,quantity) values (1274763,93,1,5);
+-- insert into orders(id,productId,userId,quantity) values (738434,162,15,10);
+-- insert into orders(id,productId,userId,quantity) values (984754,234,153,15);
+-- insert into orders(id,productId,userId,quantity) values (1023241,12,16,7);
+-- select * from orders;
+-- select category,count(*) from products group by category;
+-- select * from products where category='Phones & tablets' and price = (select max(price) from products where category='Phones & tablets');
+-- select * from (select category,count(*) as count1 from products group by category) where count1 = (select max(count(*)) as maxCount from products group by category);
